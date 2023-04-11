@@ -15,7 +15,7 @@ const db = mysql.createConnection(
     host: 'localhost',
     user: 'root',
     password: '12345678',
-    database: 'movies_db'
+    database: 'ENTER DATABSE HERE'
   },
   console.log(`Connected to the movies_db database.`)
 );
