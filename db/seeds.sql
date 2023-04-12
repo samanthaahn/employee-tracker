@@ -8,21 +8,21 @@ VALUES
 INSERT INTO role (title, salary, department_id) 
 VALUES
     -- Sales department
-    ('Sales Manager', 100000, 1),
-    ('Sales Representative', 60000, 1),
-    ('Sales Associate', 40000, 1),
+    ('Sales Manager', 150000, 1),
+    ('Sales Lead', 90000, 1),
+    ('Sales Person', 50000, 1),
 
     -- Engineering department
-    ('Engineering Manager', 120000, 2),
-    ('Software Engineer', 90000, 2),
-    ('Network Engineer', 85000, 2),
+    ('Engineering Manager', 145000, 2),
+    ('Software Lead', 100000, 2),
+    ('Networker', 90000, 2),
 
     -- Finance department
-    ('Finance Manager', 110000, 3),
-    ('Financial Analyst', 75000, 3),
-    ('Accountant', 65000, 3),
+    ('Finance Manager', 15500, 3),
+    ('Financial Lead', 84000, 3),
+    ('Financial Assistant', 60000, 3),
 
     -- Legal department
-    ('Legal Manager', 115000, 4),
-    ('Lawyer', 80000, 4),
-    ('Paralegal', 60000, 4);
+    ('Legal Manager', 200000, 4),
+    ('Legal Lead', 100000, 4),
+    ('Legal Assistant', 80000, 4);
