@@ -19,3 +19,18 @@ const db = mysql.createConnection(
   },
   console.log(`Connected to the movies_db database.`)
 );
+
+
+inquirer
+.prompt([
+{
+    type: 'list',
+    name: 'startpoint',
+    message: 'What would you like to do?',
+    choices: ['Add Employee', 'Update Employee Role', 'View All Roles', 'Add Role', 'View All Departments', 'Add Department', 'Quit'],
+}
+
+])
+.then((answers) => {
+    const svg = new SVG();
+    svg.setText(answers.character, answers.textColor);
