@@ -1,4 +1,4 @@
-# employee-tracker
+# employee-tracker [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 This is an employee tracker! It records everything you need to know about your employees, their role, the department they belong to, and even their salaries! You can view all the information or even add/update roles, departments, and employees! 
