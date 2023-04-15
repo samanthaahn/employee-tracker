@@ -11,7 +11,7 @@ This is an employee tracker! It records everything you need to know about your e
 - [Questions](#questions)
 
 ## Walkthrough Video 
-https://watch.screencastify.com/v/TWJjzCndCQ6WqsNdJLcq to an external site.
+https://drive.google.com/file/d/1k5yXmeaskpohFdVOoKC616FJiFqfp2dW/view to an external site.
 
 ## Installation
 In order to use this repo, you have to install inquirer verision 8.2.4 as well as node.js and mysql2 version 2.2.5. 
@@ -20,15 +20,15 @@ In order to use this repo, you have to install inquirer verision 8.2.4 as well a
 Open your terminal and enter "node index.js" and you'll see a prompt of questions. Select any of the prompts and each prompt will give you a different function (whether that's viewing  or editing). When you are done, just hit enter on 'quit' and you'll see a console message that says "Goodbye, thanks for stopping bye!". 
 
 ## Screenshot
-![alt text](./assets/images/Screenshot%202023-04-11%20at%208.02.17%20PM.png)
+![alt text](./assets/images/Screenshot%202023-04-14%20at%209.07.45%20PM.png)
 
-![alt text](./assets/images/Screenshot%202023-04-11%20at%208.02.35%20PM.png)
+![alt text](./assets/images/Screenshot%202023-04-14%20at%209.07.58%20PM.png)
 
-![alt text](./assets/images/Screenshot%202023-04-11%20at%208.03.20%20PM.png)
+![alt text](./assets/images/Screenshot%202023-04-14%20at%209.08.28%20PM.png)
 
-![alt text](./assets/images/Screenshot%202023-04-11%20at%208.03.34%20PM.png)
+![alt text](./assets/images/Screenshot%202023-04-14%20at%209.08.44%20PM.png)
 
-![alt text](./assets/images/Screenshot%202023-04-11%20at%208.05.15%20PM.png)
+![alt text](./assets/images/Screenshot%202023-04-14%20at%209.09.03%20PM.png)
 
 ## Contributing
 A huge thank you to Bryan our professor and Shawn our TA for always helping us. Also a big thank you to Alexis San Javior my tutor for always supporting me! 
