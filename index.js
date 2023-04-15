@@ -102,5 +102,14 @@ function updateRole() {
     });
 }
 
+function viewRoles() {
+ Pool.query('SELECT * FROM role', (err, res) => {
+  if (err) throw err;
+  return;
+ })
+    console.table(res);
+    prompt();
+  };
+
 
 prompt();
