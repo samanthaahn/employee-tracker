@@ -1,8 +1,9 @@
 const inquirer = require("inquirer");
 
-const newEmployee = require("./function/function.js");
+const {newEmployee, updateRole} = require("./function/function.js");
 
-inquirer
+function prompt(){
+  inquirer 
   .prompt([
     {
       type: "list",
@@ -23,8 +24,11 @@ inquirer
   .then((answers) => {
     if (answers.startpoint === "Add Employee") {
       addEmployee();
-    }
-  });
+    } else if (answers.startpoint === "Update Employee Role") {
+      updateRole();
+  }
+})
+};
 
 function addEmployee() {
   inquirer
@@ -53,6 +57,37 @@ function addEmployee() {
     .then((answers) => {
       newEmployee(answers).then(([res]) => {
         console.log("Added new employee!");
+        prompt();
       });
     });
 }
+
+function updateRole() {
+  inquirer
+   .prompt([
+      {
+        type: "input",
+        name: "title",
+        message: "What is the role you would like to update?",
+      },
+      {
+        type: "input",
+        name: "salary",
+        message: "What is the new salary for this role?",
+      },
+      {
+        type: "input",
+        name: "department_id",
+        message: "What is the department ID for this role?",
+      },
+    ])
+   .then((answers) => {
+      updateRole(answers).then(([res]) => {
+        console.log("Role has been updated!");
+        prompt();
+      });
+    });
+}
+
+
+prompt();
