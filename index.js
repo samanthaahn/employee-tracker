@@ -48,7 +48,7 @@ function prompt() {
       } else if (answers.startpoint === "Add Department") {
         addDepartment();
       } else if (answers.startpoint === "Quit") {
-        console.log("Goodbye!");
+        console.log("Goodbye, thanks for stopping bye!");
         process.exit();
       }
     });
