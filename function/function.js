@@ -23,6 +23,11 @@ function updateNewRole(answers) {
     return db.promise().query('INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)', [answers.title, answers.salary, answers.department_id]);
 }
 
- 
+ function addNewRole(answers) {
+    return db.promise().query('INSERT INTO role (title, salary, department_id) VALUES (?,?,?)', [answers.title, answers.salary, answers.department_id]);
+ }
 
-module.exports = {newEmployee, updateNewRole};
+function addNewDepartment(answers) {
+    return db.promise().query('INSERT INTO department (name) VALUES (?)', [answers.name]);
+}
+module.exports = {newEmployee, updateNewRole, addNewRole, addNewDepartment};
