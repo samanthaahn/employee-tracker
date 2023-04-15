@@ -20,7 +20,9 @@ function newEmployee(answers) {
 } 
 
 function updateRole(answers) {
-    return db.promise().query('UPDATE employee SET role_id =? WHERE first_name =? AND last_name =?;', [answers.role, answers.FirstName, answers.LastName]);
+    return db.promise().query('INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)', [answers.title, answers.salary, answers.department_id]);
 }
+
+function 
 
 module.exports = {newEmployee, updateRole};

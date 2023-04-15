@@ -26,9 +26,22 @@ function prompt(){
       addEmployee();
     } else if (answers.startpoint === "Update Employee Role") {
       updateRole();
-  }
-})
-};
+  } else if (answers.startpoint === "View All Roles") {
+    viewRoles();
+  } else if (answers.startpoint === "View All Employees") {
+    viewEmployees();
+  } else if (answers.startpoint === "Add Role") {
+    addRole();
+  } else if (answers.startpoint === "View All Departments") {
+    viewDepartments();
+  } else if (answers.startpoint === "Add Department") {
+    addDepartment();
+  } else if (answers.startpoint === "Quit") {
+    console.log("Goodbye!");
+    process.exit();
+  }}
+  )};
+
 
 function addEmployee() {
   inquirer
