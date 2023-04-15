@@ -11,7 +11,7 @@ const db = mysql.createConnection(
     password: '12345678',
     database: 'employee_db'
   },
-  console.log(`Connected to the movies_db database.`)
+  console.log(`Connected to the database.`)
 );
 
 
@@ -19,10 +19,10 @@ function newEmployee(answers) {
     return db.promise().query('INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?,?,?,?);',[answers.FirstName, answers.LastName, answers.role, answers.manager]);
 } 
 
-function updateRole(answers) {
+function updateNewRole(answers) {
     return db.promise().query('INSERT INTO role (title, salary, department_id) VALUES (?, ?, ?)', [answers.title, answers.salary, answers.department_id]);
 }
 
-function 
+ 
 
-module.exports = {newEmployee, updateRole};
+module.exports = {newEmployee, updateNewRole};

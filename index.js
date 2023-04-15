@@ -1,6 +1,17 @@
 const inquirer = require("inquirer");
+const mysql = require('mysql2');
 
-const {newEmployee, updateRole} = require("./function/function.js");
+const {newEmployee, updateNewRole} = require("./function/function.js");
+
+const db = mysql.createConnection(
+  {
+    host: 'localhost',
+    user: 'root',
+    password: '12345678',
+    database: 'employee_db'
+  },
+  console.log(`Connected to the database.`)
+);
 
 function prompt(){
   inquirer 
@@ -95,7 +106,7 @@ function updateRole() {
       },
     ])
    .then((answers) => {
-      updateRole(answers).then(([res]) => {
+      updateNewRole(answers).then(([res]) => {
         console.log("Role has been updated!");
         prompt();
       });
@@ -103,13 +114,19 @@ function updateRole() {
 }
 
 function viewRoles() {
- Pool.query('SELECT * FROM role', (err, res) => {
+ db.query('SELECT * FROM role', (err, res) => {
   if (err) throw err;
-  return;
- })
     console.table(res);
     prompt();
+  })
   };
 
+  function viewEmployees() {
+    db.query('SELECT * FROM employee', (err, res) => {
+     if (err) throw err;
+       console.table(res);
+       prompt();
+     })
+     };
 
 prompt();
